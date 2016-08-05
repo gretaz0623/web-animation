@@ -1,0 +1,93 @@
+html{
+    width: 1080;
+}
+.duck2{
+
+	padding-top: 300px;
+	padding-left: 700px;
+	animation-name: rotate_end_move;
+	/*time for animation*/
+	animation-duration: 5s;
+	/*how many time you what to make the animation*/
+	animation-iteration-count:10;
+	animation-direction:alternate;
+	animation-play-state: paused;
+
+}
+
+
+.duck2:hover{
+    display: block;
+    animation-play-state: running;
+}
+.water{
+
+	animation-name: rotate_across;
+	animation-duration: 10s;
+	animation-iteration-count:10;
+	animation-direction:running;
+	transition-timing-function: ease-in;
+
+
+
+}
+
+.poem {
+    color: #fff9f3;
+    text-align: left;
+    font-family: 'Indie Flower', cursive;
+    font-size: 9pt;
+
+	
+	padding-left: 780px;
+    padding-top: 20px;
+
+
+
+
+}
+
+@keyframes rotate_end_move{
+          /*beginning*/
+        0%{
+    	transform: translate(20px,10px);
+    	/*middle*/
+    	
+    	}50%{
+    	transform: translate(20px, 30px);
+    		/*end*/
+    	}100%{
+    	transform: translate(20px,10px);
+    	}
+	    }
+@keyframes rotate_across{
+         
+        0%{
+    	transform: translate(600px,0px);
+      
+
+    	
+
+    
+    	
+    	}
+        35%{
+      
+            opacity: 50}50%{
+    	transform: translate(600px, -200px);
+    	opacity: 0;
+
+
+
+    
+    	
+    	  }100%{
+    	transform: translate(600px,0px);
+        opacity: 0;
+
+    	
+    	
+    
+    	}
+	    }
+	    	    	
